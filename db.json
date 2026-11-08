@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1793636887460,
+      "name": "Alice Smith",
+      "role": "Admin"
+    },
+    {
+      "id": 1793636925092,
+      "name": "Alice Smith",
+      "role": "Admin"
+    },
+    {
+      "id": 1793636925236,
+      "name": "Alice Smith",
+      "role": "Admin"
+    },
+    {
+      "id": 1793636925386,
+      "name": "Alice Smith",
+      "role": "Admin"
+    },
+    {
+      "id": 1793636925620,
+      "name": "Alice Smith",
+      "role": "Admin"
+    },
+    {
+      "id": 1793636926194,
+      "name": "Alice Smith",
+      "role": "Admin"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+.cardo-regular {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cardo-bold {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cardo-regular-italic {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* GLOBAL */
+
+
+.latin {
+    font-family: 'Cardo';
+
+}
+
+.muted {
+    color: #929187;
+}
+
+body {
+    background: #f8f7f3;
+    color: #303832;
+    font-family: system-ui, sans-serif;
+}
+
+.navbar {
+    height: 48px;
+    background: #fff;
+    border-bottom: 1px solid #e8e7e0;
+}
+
+.section-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-weight: 700;
+    color: #929187;
+}

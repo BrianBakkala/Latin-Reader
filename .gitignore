@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+sql_conversion/db.sql
+sql_conversion/sqlite*.exe
+db/main.db.*
+my_aplatin.json

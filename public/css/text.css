@@ -1,0 +1,87 @@
+.reader-container {
+    max-width: 1180px;
+}
+
+
+
+.panel {
+    background: #fff;
+    border: 1px solid #e9e8e1;
+    border-radius: 8px;
+}
+
+.latin-text {
+    font-size: 1.35rem;
+    line-height: 1.8;
+    cursor: default;
+
+    .latin-line {
+        height: 3rem;
+
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #efeee9;
+        white-space: nowrap;
+
+        .line-number {
+            width: 32px;
+            flex-shrink: 0;
+            color: #aaa99f;
+            font: 11px system-ui;
+        }
+
+        .word {
+            cursor: default;
+
+            &:hover {
+                background: #b59514;
+            }
+        }
+
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+    }
+
+}
+
+
+.sidebar {
+
+    .commentary {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #555b54;
+    }
+
+    .vocab-entry,
+    .note-entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 10px;
+        padding: 7px 0;
+        border-bottom: 1px solid #efeee9;
+        font-size: 1.1rem;
+
+        .entry {
+            font-weight: bold;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 991px) {
+    .sidebar {
+        position: static;
+    }
+}
