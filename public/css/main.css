@@ -1,36 +1,36 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
-
-.cardo-regular {
-    font-family: "Cardo", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.cardo-bold {
-    font-family: "Cardo", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.cardo-regular-italic {
-    font-family: "Cardo", serif;
-    font-weight: 400;
-    font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 
 /* GLOBAL */
 
 
 .latin {
-    font-family: 'Cardo';
+    font-family: 'Crimson Text', serif;
 
 }
 
-.muted {
-    color: #929187;
+.accent {
+    color: #0082d8;
+}
+
+.strong {
+    font-weight: bold
+}
+
+.text-italic {
+    font-style: italic
+}
+
+.unitalic {
+    font-style: none;
+    font-style: normal;
+
+}
+
+.unbold {
+    font-weight: normal;
 }
 
 body {
@@ -50,5 +50,5 @@ body {
     text-transform: uppercase;
     letter-spacing: .12em;
     font-weight: 700;
-    color: #929187;
+    color: #0082d8;
 }

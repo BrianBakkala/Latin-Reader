@@ -1,0 +1,56 @@
+<% 
+
+
+getNoteLabel=function(words, lines) { 
+
+    let label = "";
+    let arr = Object.values(words); 
+    let prevId = -1;
+
+    for (let i=0; i < arr.length; i++) {
+        let word = arr[i];
+        const sanitizedWord = word.word.replace(/[^a-zA-ZĀĒĪŌŪāēīōū]/g, '');
+       
+        //if is a line note
+        if(lines )
+        {
+            return lines[0] + "–" + lines[lines.length-1] ; //TODO sort by line notation
+        }
+
+        //word by word note
+        else
+        {
+            if (word.id !== prevId+1 && prevId !== -1)  label +=  " ... ";
+            else label += " ";
+            
+            label += sanitizedWord;
+            prevId = word.id;
+
+        }
+
+
+    }
+    return label;
+
+
+
+
+ } %>
+    <% parseNote=function(value) { 
+        
+        return value
+        .replaceAll(/\*\*(.*?)\*\*/g, '<span class="latin strong">$1</span>');  //bold
+    
+    
+    
+    
+    } %>
+    
+    <% parseVocabEntry=function(value) { 
+        
+        return value
+        .replaceAll(/\*\*(.*?)\*\*/g, '<span class="unbold">$1</span>') //unbold
+        .replaceAll(/\*(.*?)\*/g, '<span class="unitalic">$1</span>')  //unitalic
+    
+    
+    } %>

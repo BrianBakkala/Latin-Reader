@@ -1,0 +1,4 @@
+function getNoteLabel(words)
+{
+    return "!";
+}

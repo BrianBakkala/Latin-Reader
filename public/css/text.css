@@ -15,7 +15,7 @@
     line-height: 1.8;
     cursor: default;
 
-    .latin-line {
+    .line {
         height: 3rem;
 
         display: flex;
@@ -32,9 +32,11 @@
 
         .word {
             cursor: default;
+            padding: .15rem 0.25rem;
+            border-radius: 4px;
 
             &:hover {
-                background: #b59514;
+                background: #fffac3;
             }
         }
 
@@ -58,7 +60,6 @@
 
     .vocab-entry,
     .note-entry {
-        display: flex;
         justify-content: space-between;
         align-items: baseline;
         gap: 10px;
@@ -66,9 +67,17 @@
         border-bottom: 1px solid #efeee9;
         font-size: 1.1rem;
 
+        .note-text,
+        .entry-definition {
+            font-size: 1rem;
+            color: #777777;
+        }
+
         .entry {
             font-weight: bold;
         }
+
+
 
         &:last-child {
             border-bottom: none;
